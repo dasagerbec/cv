@@ -33,7 +33,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/pic_main-4.jpg) no-repeat top center;
+   background: #161415 url(../images/hr-hands.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -46,7 +46,7 @@ header:after {
 	display: block;
 	width: 100%;
 	height: 100%;
-	
+
 }
 
 /* vertically center banner section */
@@ -65,7 +65,12 @@ header .banner {
    text-align: center;
 }
 
-header .banner-text { width: 100%; }
+header .banner-text {
+  position: absolute;
+  width: 800px;
+  right: 30px;
+  top: 35%;
+}
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
@@ -244,48 +249,55 @@ ul#nav li.current a { color: #F06000; }
 /* d. Resume Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#education,
+#experience {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a, #resume a:visited  { color: #11ABB0; }
-#resume a:hover, #resume a:focus { color: #313131; }
+#education a, #education a:visited, #experience a, #experience a:visited  { color: #11ABB0; }
+#education a:hover, #education a:focus, #experience a:hover, #experience a:focus { color: #313131; }
 
-#resume h1 {
+#education h1,
+#experience h1 {
    font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#resume h1 span {
+#education h1 span,
+#experience h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
 }
-#resume h3 {
+#education h3,
+#experience h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
-#resume .header-col { padding-top: 9px; }
-#resume .main-col { padding-right: 10%; }
+#education .header-col, #experience .header-col { padding-top: 9px; }
+#education .main-col, #experience .main-col { padding-right: 10%; }
 
 .education, .work {
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
-#resume .info {
+#education .info,
+#experience .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
-#resume .info span {
+#education .info span,
+#experience .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
-#resume .date {
+#education .date,
+#experience .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
